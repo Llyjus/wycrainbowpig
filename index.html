@@ -2,12 +2,21 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    img {
-  max-width: 100%;
-  height: auto;
-}
     <title>飞柱王出魅力时刻,哼哧哼哧哼哧哼哧哼哧哼哧</title>
     <style>
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width: 601px) {
+          img {
+            max-width: 500px;
+            height: auto;
+          }
+        }
         .pink{position:relative;background-color:#CCCCFF;color:black;padding:30px;font-size:20px}
         .white{position:relative;background-color:white;color:white;padding:10px;font-size:10px}
     </style>

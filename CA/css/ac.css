@@ -1,0 +1,36 @@
+h1{
+    text-align:center;
+    margin-bottom: 3em;
+}
+
+main{
+    display: flexbox;
+}
+p{
+    padding-bottom: 1em;
+}
+
+aside a{
+    position: fixed;
+    right: 0;
+    top:50%;
+    background-color: plum;
+    border: solid plum;
+    color: rgb(123, 90, 255);
+    text-decoration: none;
+    text-shadow: 1px 1px 0.5px rgb(132, 60, 160);
+    border-radius:50px;
+    font-size: 0.5em;
+    overflow: hidden;
+    width: 5em;
+    padding: 1.5em 5px;
+    text-align: center;
+}
+
+aside a:hover{
+    border: solid rgb(195, 191, 255);
+    width: 5em;
+    background-color: rgb(195, 191, 255);
+    color:rgb(143, 188, 213);
+    text-shadow: none;
+}

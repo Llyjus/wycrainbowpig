@@ -1,0 +1,121 @@
+html{
+    background-image: url('../images/cat3.jpg');
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+}
+
+#main_intr{
+    display:flexbox;
+    padding: 1rem 3rem;
+    border: 5px solid rgb(199, 167, 255);
+    background-color: rgba(244, 221, 255, 0.8);
+    border-radius: 36px;
+    color: rgb(180, 137, 255);
+}
+
+#claw{
+    border: 5px solid pink;
+    border-radius: 50px;
+    background-color: rgba(255, 228, 217, 0.7);
+    color:rgb(255, 141, 160);
+    padding:0 1rem 1rem 1rem;
+}
+
+#balance{
+    border: 5px solid rgb(167, 223, 255);
+    background-color: rgba(209, 252, 255, 0.7);
+    border-radius: 50px;
+    color:rgb(111, 164, 255);
+    padding:0 1rem 1rem 1rem;
+}
+
+#drinking{
+    border: 5px solid rgb(255, 244, 162);
+    background-color: rgba(244, 244, 218, 0.7);
+    border-radius: 50px;
+    color:rgb(255, 219, 76);
+    padding:0 1rem 1rem 1rem;
+}
+
+img{
+    font-size: 0.3rem;
+    width:20%;
+}
+
+@media screen and (min-width:801px){
+    #detailed_intr:has(#claw:hover) #balance{
+        display: none ;
+    }
+    
+    #detailed_intr:has(#balance:hover) #claw{
+        display: none ;
+    }
+    
+    #detailed_intr:has(#claw:hover) #drinking{
+        display: none ;
+    }
+    
+    #detailed_intr:has(#drinking:hover) #claw{
+        display: none ;
+    }
+    
+    #detailed_intr:has(#balance:hover) #drinking{
+        display: none ;
+    }
+    
+    #detailed_intr:has(#drinking:hover) #balance{
+        display: none ;
+    }
+    
+    
+    #detailed_intr #claw:hover{
+        background-image:url('../images/claw2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+
+    #detailed_intr #balance:hover{
+        background-image:url('../images/jump2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-blend-mode: overlay;
+    }
+
+    #detailed_intr #drinking:hover{
+        background-image:url('../images/drinking2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size: 100%;
+        background-position-y: 70%;
+        background-blend-mode: overlay;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    #claw:has(#clawcb:checked){
+        background-image:url('../images/claw2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    
+    #balance:has(#balancecb:checked){
+        background-image:url('../images/jump2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+    }
+    
+    #drinking:has(#drinkingcb:checked){
+        background-image:url('../images/drinking2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 70%;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+    }
+}

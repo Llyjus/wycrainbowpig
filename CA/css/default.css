@@ -1,0 +1,65 @@
+html{
+    background-color: rgb(210, 235, 255);
+}
+
+body{
+    font-family: 'JelleeBold';
+}
+
+a[href=""]{
+    background-color: pink;
+}
+
+#nav a{
+    color:rgb(199, 167, 255);
+    font-style: unset;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(120, 111, 161);
+}
+
+nav a:hover{
+    background-color: rgb(255, 185, 232);
+    border: 5px solid rgb(255, 185, 232);
+    color:blueviolet !important;
+    text-shadow: none !important;
+}
+
+
+
+label:hover{
+    background-color: blueviolet;
+    font-weight: bold;
+    color: rgb(255, 251, 0);
+    user-select: none;
+}
+
+label{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.623) ;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.block{
+    height: 20px;
+}
+#footer{
+    background-color: rgba(206, 220, 255, 0.7);
+    display: flex;
+    font-size: 12px;
+    justify-content:flex-end;
+}
+
+#footer a{
+    font-style: unset;
+    color:blueviolet
+}
+
+#footer a:hover{
+    background-color: crimson;
+    color: rgb(246, 255, 0);
+}

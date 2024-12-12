@@ -1,0 +1,226 @@
+/*nav*/
+
+nav{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+#nav{
+    background-color: lavender;
+}
+
+nav a{
+    padding: 0.3em 0.5em;
+    border:5px solid pink;
+    box-shadow:10px 5px 20px burlywood ;
+    background-color: rgb(210, 235, 255);
+    border-radius: 72px;
+    margin: 0.5em;
+    font-size: 0.5em;
+}
+
+#navcheck{
+    display: none;
+}
+
+#navcheck:checked ~ #nav{
+    display: none;
+}
+
+aside a{
+    position: fixed;
+    left: 0;
+    top:50%;
+    background-color: plum;
+    border: solid plum;
+    color: rgb(123, 90, 255);
+    text-decoration: none;
+    text-shadow: 1px 1px 0.5px rgb(132, 60, 160);
+    border-radius:50px;
+    font-size: 0.5em;
+    overflow: hidden;
+    width: 5em;
+    padding: 1.5em 5px;
+    text-align: center;
+}
+
+aside a:hover{
+    border: solid rgb(195, 191, 255);
+    width: 5em;
+    background-color: rgb(195, 191, 255);
+    color:rgb(143, 188, 213);
+    text-shadow: none;
+}
+
+main p{
+    font-size: 0.7rem;
+}
+
+main >section section{
+    margin: 0;
+}
+
+
+@media screen and (min-width:1400px){
+
+    main{
+        margin:3.5em 3em auto 3em;
+    }
+
+    
+    #top{
+        scroll-margin-top: 1000px;
+    }
+    
+    nav:has(#navcheck:checked) + main{
+        margin: 1.5em 3em auto 3em;
+    }
+
+    nav:has(#navcheck:checked) + #top{
+        scroll-margin-top: 1000px;
+    }
+
+}
+
+@media screen and (max-width:1400px) and (min-width:801px){
+
+    
+    main{
+        margin:7.5em 3em auto 3em;
+    }
+
+    
+    #top{
+        scroll-margin-top: 1000px;
+    }
+    
+    nav:has(#navcheck:checked) + main{
+        margin: 2em 3em auto 3em;
+    }
+
+    nav:has(#navcheck:checked) + #top{
+        scroll-margin-top: 1000px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    
+    main{
+        margin:15em 3em auto 3em;
+    }
+
+    #top{
+        scroll-margin-top: 1000px;
+    }
+    
+    nav:has(#navcheck:checked) + main{
+        margin: 2.5em 3em auto 3em;
+    }
+
+    nav:has(#navcheck:checked) + #top{
+        scroll-margin-top: 1000px;
+    }
+
+}
+
+/*content*/
+
+
+@media screen and (min-width:801px){
+
+    .button{
+        display: none;
+    }
+
+    .mobile_reminder{
+        display: none;
+    }
+
+    .part{
+        width: 30%;
+    }
+
+    #detailed_intr{
+        margin: 3rem 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .part:hover .inside{
+        display:unset;
+        text-align: center;
+    }
+    
+    main:has(section:hover){
+        display: block;
+    }
+
+    main > #detailed_intr > section:hover{
+        width:100%;
+        justify-content: center;
+    }
+
+    .part:hover .reminder{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .part{
+        width: 90%;
+    }
+
+    #detailed_intr{
+        margin: 3rem 1rem;
+        display: flexbox;
+        justify-content:center;
+        text-align: center;
+    }
+
+    .laptop_reminder{
+    display: none;
+    }
+
+    .reminder:has(.info_check:checked){
+        display: none;
+    }
+
+    .reminder:has(.info_check:checked) ~ .inside{
+        display: unset;
+    }
+}
+
+
+.info_check{
+    display: none;
+}
+
+.inside{
+    display: none;
+}
+
+span p{
+    font-size: 12px;
+}
+
+.inside p{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+
+

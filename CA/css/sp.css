@@ -1,0 +1,193 @@
+html{
+    background-image: url('../images/cat6.jpg');
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    background-position-x: 70%;
+}
+
+#main_intr{
+    display:flexbox;
+    padding: 1rem 3rem;
+    border: 5px solid rgb(255, 183, 3);
+    background-color: rgba(255, 242, 196, 0.8);
+    border-radius: 36px;
+    color: rgb(255, 172, 47);
+}
+
+img{
+    font-size: 0.3rem;
+    width:30%;
+}
+
+#detailed_intr{
+    flex-wrap: wrap;
+}
+
+.inside img{
+    width:30%;
+}
+
+#bs{
+    border: 5px solid rgb(108, 108, 108);
+    border-radius: 50px;
+    background-color: rgba(223, 223, 223, 0.7);
+    color:rgb(155, 155, 155);
+    padding:0 1rem 1rem 1rem;
+
+}
+
+
+#rd{
+    border: 5px solid pink;
+    border-radius: 50px;
+    background-color: rgba(255, 228, 217, 0.7);
+    color:rgb(255, 141, 160);
+    padding:0 1rem 1rem 1rem;
+}
+
+#mc{
+    border: 5px solid rgb(245, 243, 83);
+    border-radius: 50px;
+    background-color: rgba(250, 255, 203, 0.7);
+    color:rgb(255, 213, 1);
+    padding:0 1rem 1rem 1rem;
+}
+
+#sm{
+    border: 5px solid rgb(96, 159, 253);
+    border-radius: 50px;
+    background-color: rgba(203, 209, 255, 0.7);
+    color:rgb(52, 140, 255);
+    padding:0 1rem 1rem 1rem;
+}
+
+#bc{
+    border: 5px solid rgb(255, 197, 70);
+    border-radius: 50px;
+    background-color: rgba(255, 219, 177, 0.7);
+    color:rgb(255, 173, 30);
+    padding:0 1rem 1rem 1rem;
+}
+
+#ps{
+    border: 5px solid rgb(173, 252, 255);
+    border-radius: 50px;
+    background-color: rgba(220, 255, 254, 0.7);
+    color:rgb(30, 244, 255);
+    padding:0 1rem 1rem 1rem;
+}
+
+@media screen and (min-width:801px){
+    #detailed_intr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    }
+    
+    #detailed_intr .part{
+        margin-bottom: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .inside p{
+        font-size: 0.7rem;
+    }
+
+    #detailed_intr #bs:hover{
+        background-image:url('../images/bs3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+    #detailed_intr #rd:hover{
+        background-image:url('../images/rd3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+
+    #detailed_intr #mc:hover{
+        background-image:url('../images/mc2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+    #detailed_intr #sm:hover{
+        background-image:url('../images/sm3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+    #detailed_intr #bc:hover{
+        background-image:url('../images/bc1.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+    #detailed_intr #ps:hover{
+        background-image:url('../images/ps3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-position-y: 40%;
+        background-blend-mode: overlay;
+    }
+    #detailed_intr:has(section:hover) section{
+        margin:0;
+    }
+}
+
+@media screen and (max-width:801px){
+    #bs:has(#bscb:checked){
+        background-image:url('../images/bs3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    #rd:has(#rdcb:checked){
+        background-image:url('../images/rd3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    #mc:has(#clawcb:checked){
+        background-image:url('../images/mc2.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    #sm:has(#smcb:checked){
+        background-image:url('../images/sm3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    #bc:has(#bccb:checked){
+        background-image:url('../images/bc1.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+    #ps:has(#pscb:checked){
+        background-image:url('../images/ps3.jpg');
+        background-color: rgba(255, 255, 255, 0.7);
+        background-size:100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+    }
+}

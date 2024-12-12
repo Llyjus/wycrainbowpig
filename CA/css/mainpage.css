@@ -1,0 +1,58 @@
+body{
+    margin-top: 0;
+}
+
+#head{
+    background-image:url('../images/cat1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#checkbox{
+    display:none;
+}
+
+#checkbox:checked ~ #topic{
+    display:none;
+}
+
+.intr{
+    margin:1rem 1rem;
+    border:solid 10px rgb(225, 183, 127);
+    color:rgb(190, 157, 114);
+    text-shadow: 1px 1px 1px rgb(254, 211, 154);
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url('../images/cat2.jpg');
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+h1{
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'AvaraBold', sans-serif;
+    color:rgb(138, 164, 231);
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 3em 0;
+    margin-bottom: 5px;
+    margin-top: 0;
+    display: block;
+    text-shadow: 15px 10px 10px rgb(169, 169, 253);
+}
+
+nav{
+    display:block;
+    margin: 2rem 1rem;
+}
+
+nav a{
+    padding: 1rem 1rem;
+    border:10px solid pink;
+    box-shadow:10px 5px 20px burlywood ;
+    border-radius: 72px;
+    margin: 0.5rem;
+}

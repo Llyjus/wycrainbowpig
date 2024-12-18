@@ -1,0 +1,18 @@
+body{
+    display: flexbox;
+    background-color: rgb(170, 211, 128);
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+video{
+    width:90%;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    text-decoration: line-through;
+    color: rgb(195, 167, 255);
+}
